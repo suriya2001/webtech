@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>
+ONLINE LIBRARY MANAGEMENT SYSTEM
+    </title>
+    
+</head>
+<link rel = "stylesheet" href = "styles.css">
+<script src = "validation.js"> </script>
+<body>
+<div id="topbar"> 
+<h1 class=h1 >ONLINE LIBRAY MANGEMENT SYSTEM</h1>
+</div>
+<div id= "header">
+    <img src="lib.png" alt = "images">
+    <ul>
+        <li  ><a  href="a.html"> HOME </a></li>
+        <li><a href="b.html"> SEARCH</a></li>
+        <li><a href="c.html"> ABOUT US </a></li>
+        <li><a href="#"> CONTACT</a></li>
+    </ul>
+</div>
+
+    <form action="/action_page.php" name='registration' onSubmit="return
+formValidation();">
+<div id ="container">
+<fieldset>
+<legend>Enter the details to take for rent</legend>
+<label for="book_id">ENTER THE BOOK ID : </label><br>
+<input type="number" id="book_id" name="book_id" value=""
+required><br><br>
+<label for="name">ENTER YOUR NAME :</label><br>
+<input type="text" id="name" name="name" value=""><br>
+<label for="m_number">ENTER YOUR MOBILE
+NUMBER :</label><br>
+<input type="number" id="m_number" name="m_number" value=""><br>
+<label for="today">FROM :</label><br>
+<input type="date" id="today" name="today" value=""><br>
+<label for="deadline">TO :</label><br>
+<input type="date" id="deadline" name="deadline" value=""><br>
+<input type="submit" value="Submit">
+</fieldset>
+</div>
+</form>
+
+
+     
+
+</body>
+</html>

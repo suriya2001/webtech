@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>
+ONLINE LIBRARY MANAGEMENT SYSTEM
+    </title>
+    
+</head>
+<link rel = "stylesheet" href = "styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+<div id="topbar"> 
+<h1 class=h1 >ONLINE LIBRAY MANAGEMENT SYSTEM</h1>
+</div>
+<div id= "header">
+    <img src="lib.png" alt = "images">
+    <ul>
+        <li  ><a  href="a.html"> HOME </a></li>
+        <li><a href="b.html"> SEARCH</a></li>
+        <li><a href="c.html"> ABOUT US </a></li>
+        <li><a href="#"> CONTACT</a></li>
+    </ul>
+</div>
+<div id="texts">
+<form >
+    <h1 >Select the category of books:</h1>
+    <select ng-model="myVar">
+      <option value="">
+      <option value="students">Students
+      <option value="exams">Competitive exams
+      <option value="stories">Stories
+    </select>
+  </form>
+  
+  <div ng-switch="myVar">
+    <div ng-switch-when="students">
+       <h1>Students</h1>
+       <h3>The students section consist of books like:</h3>
+    
+        <p>   Kindergarten books,For Class 1-12 Books and for colleage students(BE,BTECH,etc..)</p>
+       
+    </div>
+    <div ng-switch-when="exams">
+       <h1>Competitive exams</h1>
+       <p>This section consits of books for Competitive exams like TNPSC,NEET,JEE,UPSA etc...</p>
+    </div>
+    <div ng-switch-when="stories">
+       <h1>Stories and novels</h1>
+       <p>Intresting stories and novels are available here.</p>
+    </div>
+
+</div>
+</div>
+  
+     
+
+</body>
+</html>
